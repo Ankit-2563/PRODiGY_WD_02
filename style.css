@@ -1,0 +1,110 @@
+/* digital font link */
+@import url(https://db.onlinewebfonts.com/c/58045dabdc3a361cb9bb9faf2f1dd1f3?family=Digital-7+V7);
+/* poppins font link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #c5a8ff;
+}
+.wrapper {
+  user-select: none;
+}
+.wrapper .time {
+  height: 150px;
+  background: #222832;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 0 10px;
+}
+.wrapper .time span {
+  font-family: "Digital-7 V7";
+  width: 100px;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 500;
+  color: white;
+}
+.time span.colon {
+  width: 10px;
+}
+.time span.ms-colon,
+.time span.millisecond {
+  color: #c5a8ff;
+}
+.wrapper .buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.buttons button {
+  padding: 6px 16px;
+  outline: none;
+  border: none;
+  margin: 0 5px;
+  color: white;
+  background: #222832;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.buttons button.active,
+.buttons button.stopActive {
+  pointer-events: none;
+  opacity: 0.7;
+}
+.wrapper .lap-container {
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 250px;
+  margin: 20px auto;
+  text-align: center;
+  height: 190px;
+  overflow-y: auto;
+  background-color: #222832;
+}
+
+.lap-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  color: white;
+}
+
+.lap-item {
+  background-color: #303846;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+.lap-container h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.lap-container::-webkit-scrollbar {
+  width: 8px; /* width of the scrollbar */
+}
+
+.lap-container::-webkit-scrollbar-track {
+  background: #303846; /* color of the scrollbar track */
+}
+
+.lap-container::-webkit-scrollbar-thumb {
+  background-color: #222832; /* color of the scrollbar */
+  border-radius: 4px; /* roundness of the scrollbar thumb */
+}
